@@ -26,7 +26,6 @@ a {
   padding-right: 50px;
   margin: auto;
   min-height: 100vh;
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

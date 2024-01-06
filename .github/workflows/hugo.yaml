@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - 4-deploy-project-to-github-pages
+      - develop
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

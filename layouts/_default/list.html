@@ -22,6 +22,11 @@
           <span></span>
           <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
         </div>
+        <div class="list-item-categories">
+          {{ range (.GetTerms "categories") }}
+            <a class="list-item-category" href={{ .Permalink }}>{{ .Name }}</a>
+          {{ end }}
+        </div>
       </div>
     </div>
   {{ end }}

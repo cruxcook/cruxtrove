@@ -5,7 +5,7 @@ draft = false
 description = "1st post description"
 image = "/images/1s.webp"
 imageBig = "/images/1b.webp"
-categories = ["general", "python", "c++"]
+categories = ["python", "c++"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 +++

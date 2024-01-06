@@ -64,6 +64,19 @@ a {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.list-item-categories {
+  display: flex;
+  gap: 10px;
+}
+
+.list-item-category {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--bg-soft);
+  color: var(--text-soft);
+  font-size: 14px;
+}
 /* LIST END */
 
 @media (max-width: 1536px) {

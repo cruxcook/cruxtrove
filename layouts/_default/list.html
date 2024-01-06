@@ -19,7 +19,11 @@
         <p class="list-item-desc">{{ .Params.description }}</p>
         <div class="list-item-detail">
           <img src={{ .Params.avatar }} loading="lazy" alt="" class="list-item-avatar">
-          <span></span>
+          <span>
+            {{ range (.GetTerms "authors") }}
+              <a href={{ .Permalink }}>{{ .Name }}</a>
+            {{ end }}
+          </span>
           <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
         </div>
         <div class="list-item-categories">

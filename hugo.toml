@@ -1,3 +1,10 @@
 baseURL = 'https://cruxcook.github.io/cruxtrove/'
 languageCode = 'en-us'
 title = 'Crux Trove'
+
+[params]
+    dateFormat = "Jan 02, 2006"
+
+[taxonomies]
+    category = "categories"
+    author = "authors"

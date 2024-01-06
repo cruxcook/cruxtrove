@@ -1,0 +1,38 @@
+{{ define "main" }}   <!-- Define block `main` -->
+<div class="list">
+  {{ range .Paginator.Pages }}
+    <div class="list-item">
+      <!-- 
+        `.Params.image` calls `image` value in the "content" post
+        `.Title` calls `title` but it's a default tag so no need `.Params` as above
+      -->
+      <img
+        src={{ .Params.image }}
+        alt={{ .Title }}
+        class="list-item-image"
+        loading="lazy"
+      >
+      <div class="list-item-texts">
+        <h1 class="list-item-title">
+          <a href={{ .Permalink }}>{{ .Title }}</a>
+        </h1>
+        <p class="list-item-desc">{{ .Params.description }}</p>
+        <div class="list-item-detail">
+          <img src={{ .Params.avatar }} loading="lazy" alt="" class="list-item-avatar">
+          <span>
+            {{ range (.GetTerms "authors") }}
+              <a href={{ .Permalink }}>{{ .Name }}</a>
+            {{ end }}
+          </span>
+          <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+        </div>
+        <div class="list-item-categories">
+          {{ range (.GetTerms "categories") }}
+            <a class="list-item-category" href={{ .Permalink }}>{{ .Name }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

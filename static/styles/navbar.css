@@ -1,0 +1,41 @@
+:root {
+  --bg: #0b1529;
+  --bg-soft: #1f3050;
+  --text: #dee4eb;
+  --text-soft: #cbd2d9;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bg-soft);
+  color: var(--text-soft);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .links {
+    font-size: 14px;
+  }
+}

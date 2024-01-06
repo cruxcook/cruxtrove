@@ -31,6 +31,41 @@ a {
   justify-content: space-between;
 }
 
+/* LIST START */
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.list-item-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.list-item-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.list-item-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* LIST END */
+
 @media (max-width: 1536px) {
   .container {
     max-width: 1366px;

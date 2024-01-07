@@ -82,3 +82,13 @@
 .single-right-bar {
   flex: 1;
 }
+
+@media (max-width: 1024px) {
+  .single-head-img {
+    display: none;
+  }
+  
+  .single-bottom {
+    flex-direction: column-reverse;
+  }
+}

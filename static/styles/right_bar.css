@@ -1,0 +1,25 @@
+.right-bar {
+  position: sticky;
+  top: 100px;
+}
+
+.right-bar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-bar-img-horizontal {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .right-bar-img {
+    display: none;
+  }
+
+  .right-bar-img-horizontal {
+    display: block;
+    width: 100%;
+  }
+}

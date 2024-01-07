@@ -1,5 +1,39 @@
 {{ define "main" }}
+<link rel="stylesheet" href="/styles/single.css">
 <div class="single">
-  Single Page
+  <div class="single-head">
+    <div class="single-head-texts">
+      <h1 class="single-head-title">{{ .Title }}</h1>
+      <p class="single-head-desc">{{ .Params.description }}</p>
+      <div class="single-head-detail">
+        <img 
+          src={{ .Params.avatar }} 
+          loading="lazy" 
+          alt=""
+          class="single-avatar"
+        >
+        <span>
+          {{ range (.GetTerms "authors") }}
+          <a href={{ .Permalink }}>{{ .Name }}</a>
+          {{ end }}
+        </span>
+        {{ range (.GetTerms "categories") }}
+        <a href={{ .Permalink }} class="single-category">{{ .Name }}</a>
+        {{ end }}
+      </div>
+      <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+    </div>
+    <img 
+      src={{ .Params.imageBig }}
+      alt={{ .Title }}
+      class="single-head-img"
+    >
+  </div>
+  <div class="single-bottom">
+    <div class="single-content">{{ .Content }}</div>
+    <div class="single-right-bar">
+      {{ partial "right_bar" .}}
+    </div>
+  </div>
 </div>
 {{ end }}

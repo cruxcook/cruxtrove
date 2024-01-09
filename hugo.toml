@@ -1,7 +1,9 @@
-baseURL = 'https://cruxcook.github.io/cruxtrove/'
+baseURL = ''
 relativeURLs = "True"
 languageCode = 'en-us'
 title = 'Crux Trove'
+
+paginate = 2
 
 [params]
     dateFormat = "Jan 02, 2006"

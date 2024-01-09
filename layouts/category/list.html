@@ -4,11 +4,9 @@
     Run `{{ printf "RelPermalink: %s" .RelPermalink }}` to test RelPermalink
   -->
   {{ printf "RelPermalink: %s" .RelPermalink }}
-  {{ .RelPermalink | relURL }}
-  {{ .RelPermalink | absURL }}
-  {{ if eq .RelPermalink "/categories/"}}
+  {{ if eq .RelPermalink "categories/"}}
     {{ range $.Site.Taxonomies.categories.ByCount }}
-      <a href="/categories/{{ .Name }}">
+      <a href="categories/{{ .Name }}">
         # {{ .Name }} <small>({{.Count}})</small>
       </a>
     {{end}}

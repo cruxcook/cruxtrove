@@ -1,4 +1,5 @@
 {{ define "main" }}   <!-- Define block `main` -->
+{{ printf "RelPermalink: %s" .RelPermalink }}
 <div class="list">
   {{ range .Paginator.Pages }}
     <div class="list-item">

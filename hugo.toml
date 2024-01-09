@@ -1,5 +1,6 @@
 baseURL = '/'
-relativeURLs = "True"
+uglyURLs = 'True'
+relativeURLs = 'True'
 languageCode = 'en-us'
 title = 'Crux Trove'
 

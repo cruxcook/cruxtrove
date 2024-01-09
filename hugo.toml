@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://cruxcook.github.io/cruxtrove'
 uglyURLs = 'True'
 relativeURLs = 'True'
 languageCode = 'en-us'

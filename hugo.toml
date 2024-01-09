@@ -7,6 +7,7 @@ canonifyUrls = true
 paginate = 2
 
 [params]
+    description = "Projects Showcase"
     dateFormat = "Jan 02, 2006"
 
 [taxonomies]

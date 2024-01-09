@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://cruxcook.github.io/cruxtrove/'
 relativeURLs = true
 languageCode = 'en-us'
 title = 'Crux Trove'

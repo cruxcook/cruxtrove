@@ -63,4 +63,8 @@
   .links {
     font-size: 14px;
   }
+
+  .search-button span {
+    display: none;
+  }
 }

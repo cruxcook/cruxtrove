@@ -3,7 +3,7 @@
     Note: `RelPermalink` value is `/cruxtrove/categories/`
     Run `{{ printf "RelPermalink: %s" .RelPermalink }}` to test RelPermalink
   -->
-  {{ if eq .RelPermalink "/cruxtrove/categories/"}}
+  {{ if eq .RelPermalink "/categories/"}}
     {{ range $.Site.Taxonomies.categories.ByCount }}
       <a href="/categories/{{ .Name }}">
         # {{ .Name }} <small>({{.Count}})</small>
@@ -44,7 +44,7 @@
             </div>
           </div>
         </div>
-      {{ end }}
+      {{ end }} {{ template "_internal/pagination.html" . }}
     </div>
   {{ end }}
 {{ end }}

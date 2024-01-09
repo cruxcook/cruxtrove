@@ -1,6 +1,5 @@
-baseURL = 'https://cruxcook.github.io/cruxtrove'
-uglyURLs = 'True'
-relativeURLs = 'True'
+baseURL = '/'
+relativeURLs = true
 languageCode = 'en-us'
 title = 'Crux Trove'
 

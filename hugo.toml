@@ -4,7 +4,7 @@ languageCode = 'en-us'
 title = 'Crux Trove'
 canonifyUrls = true
 
-paginate = 2
+paginate = 4
 
 [params]
     description = "Projects Showcase"

@@ -1,10 +1,10 @@
 +++
 title = 'Pathfinding Visualizer'
-date = 2024-01-05T16:44:33-08:00
+date = 2024-01-02T16:44:33-08:00
 draft = false
 description = "Pathfinding Visualizer"
-image = "/images/3s.webp"
-imageBig = "/images/3b.webp"
+image = "/images/python_icon.webp"
+imageBig = "/images/python_icon.webp"
 categories = ["python", "pygame"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
@@ -31,19 +31,11 @@ projSrc = "https://github.com/cruxcook/pathfinding-visualizer"
 
 Visualizes Pathfinding algorithms.
 
-</br>
-
-<p align="center">
-    <b>Straight Path</b>
-</p>
+#### Straight Path
 
 ![screenshot_2](images/screenshot_2.webp)
 
-</br>
-
-<p align="center">
-    <b>Diagonal Path</b>
-</p>
+#### Diagonal Path
 
 ![screenshot_3](images/screenshot_3.webp)
 

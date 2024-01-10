@@ -1,19 +1,19 @@
 +++
-title = 'Retro Visualizer'
-date = 2023-12-14T16:44:33-08:00
+title = 'Finite State Machine'
+date = 2023-10-23T16:44:33-08:00
 draft = false
-description = "Sorting/Searching Visualizer"
+description = "Finite State Machine (FSM)"
 image = "/images/cpp_icon.webp"
 imageBig = "/images/cpp_icon.webp"
 categories = ["c++"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
-projSrc = "https://github.com/cruxcook/retro-visualizer"
+projSrc = "https://github.com/cruxcook/fsm"
 +++
 
-![image](images/retro_screenshot.webp)
+![screenshot](images/fsm_screenshot.webp)
 
-> Developed in [GCC](https://gcc.gnu.org/) (REQUIRED)
+> Developed in [GCC](https://gcc.gnu.org/)
 
 ## Contents
 
@@ -25,11 +25,11 @@ projSrc = "https://github.com/cruxcook/retro-visualizer"
 
 ### 1. Project Configuration
 
--   GCC: 15.0.0
+-   GCC: 14.0.0
 
 ### 2. Features
 
-Visualizes Sorting and Searching algorithms.
+Navigates between states (`Menu`, `About`, `Exit`).
 
 ### 3. Usage
 
@@ -46,7 +46,7 @@ $ make run
 
 # or 
 
-$ ./retro
+$ ./FSM
 ```
 
 To clean or rebuild the project:

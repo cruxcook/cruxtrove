@@ -1,0 +1,16 @@
+<script>
+  window.store = {
+      // search over the proj
+      {{ range .Site.Pages }}
+      // Permalink as an identifier
+      "{{ .Permalink }}": {
+          // write all data we need to be displayed in the search list
+          "title": "{{ .Params.title  }}",
+          "url": "{{ .Permalink }}",
+          "description": {{ .Params.description }},
+          "categories": [{{ range .Params.categories }}"{{ . }}",{{ end }}],
+        },
+      {{ end }}
+  }
+  </script>
+  

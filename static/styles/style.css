@@ -16,7 +16,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-body.light{
+body.light {
   --bg: #dee4eb;
   --text: #0b1529;
 }
@@ -115,6 +115,16 @@ a {
   cursor: not-allowed;
 }
 /* LIST END */
+
+/* ICONS START */
+.github-icon g {
+  fill: var(--text);
+}
+
+.portfolio-icon g {
+  fill: var(--text);
+}
+/* ICONS END */
 
 @media (max-width: 1536px) {
   .container {

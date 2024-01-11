@@ -1,4 +1,9 @@
 {{ define "main" }} <!-- inherit from base layout -->
+<div class="search-button">
+  <span>
+    {{ partial "search_form.html" . }}
+  </span>
+</div>
 <h2 id="search-title">
   {{ .Name }}
 </h2>

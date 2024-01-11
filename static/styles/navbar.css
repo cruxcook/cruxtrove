@@ -20,8 +20,23 @@
   font-size: 20px;
 }
 
+.home-button {
+  display: none;
+}
+.home-text {
+  display: block;
+}
+
+.categories-button {
+  display: none;
+}
+.categories-text {
+  display: block;
+}
+
+/* SEARCH START */
 .search-button {
-  display: flex;
+  display: inline-block;
   align-items: center;
   gap: 10px;
   background-color: var(--bg-soft);
@@ -29,6 +44,23 @@
   padding: 5px;
   border-radius: 10px;
 }
+
+#search {
+  background-color: transparent; /* Set form background color to transparent */
+  margin: 0; /* Remove default form margin */
+  display: flex; /* Optional: Adjust display properties as needed */
+  padding: 5px;
+}
+
+#search-input {
+  width: 100%;
+  border: none; /* Optional: Add border for better visibility */
+  outline: none;
+  background-color: transparent; /* Set input background color to transparent */
+  color: #dee4eb; /* Set the text color */
+  font-size: large;
+}
+/* SEARCH END */
 
 .toggle {
   width: 40px;
@@ -64,7 +96,23 @@
     font-size: 14px;
   }
 
-  .search-button span {
+  .home-button {
+    display: block;
+  }
+  .home-button svg {
+    fill: var(--text);
+  }
+  .home-text {
+    display: none;
+  }
+
+  .categories-button {
+    display: block;
+  }
+  .categories-button path {
+    stroke: var(--text);
+  }
+  .categories-text {
     display: none;
   }
 }

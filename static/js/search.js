@@ -12,11 +12,16 @@ function displayResults(results, store) {
       // if you want to style the list, edit this
       resultList += `
             <li>
-                <h2>
-                    <a href="${item.url}">${item.title}</a>
-                </h2>'
-                <p>${item.content.substring(0, 150)}...</p>
+              <div class="list-item-texts">
+                <h1 class="list-item-title">
+                  <a href="${item.url}">${item.title}</a>
+                </h1>
+                <div class="list-item-categories">
+                  ${item.categories.map(category => `<span class="list-item-category">${category}</span>`).join('')}
+                </div>
+              </div>
             </li>
+            <br><br>
         `;
     }
     // place the result list
@@ -43,18 +48,21 @@ if (query) {
       // boost search to 15
       boost: 15,
     });
-    this.field("content", {
+    this.field("categories", {
       // boost search to 10
       boost: 10,
     });
 
     // provide search index data to lunr function / idx
     for (const key in window.store) {
-      this.add({
-        id: key,
-        title: window.store[key].title,
-        content: window.store[key].content,
-      });
+      // remove `Category` result
+      if (window.store[key].description != null) {
+        this.add({
+          id: key,
+          title: window.store[key].title,
+          categories: window.store[key].categories,
+        });
+      }
     }
   });
 
@@ -65,5 +73,5 @@ if (query) {
 
   // Replace the title to 'Search Results for <query>' so user know if the search is successful
   document.getElementById("search-title").innerText =
-    "Search Results for '" + query + "'";
+    "Search results for '" + query + "'";
 }

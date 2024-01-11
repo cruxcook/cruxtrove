@@ -1,11 +1,11 @@
 {{ define "main" }} <!-- inherit from base layout -->
 <h2 id="search-title">
-  {{ .Name }} 
+  {{ .Name }}
 </h2>
-<ul id="results">   <!-- later this element will be used to place our search results -->
-    <li>
-        Search results would be shown here.
-    </li>
+<ul id="results"> <!-- later this element will be used to place our search results -->
+  <li>
+    Search results would be shown here.
+  </li>
 </ul>
 {{ partial "search_index.html" . }}
 {{ end }}

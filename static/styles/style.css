@@ -116,6 +116,21 @@ a {
 }
 /* LIST END */
 
+/* SEARCH START */
+#search {
+  background-color: transparent; /* Set form background color to transparent */
+  margin: 0; /* Remove default form margin */
+  display: flex; /* Optional: Adjust display properties as needed */
+}
+
+#search-input {
+  border: none; /* Optional: Add border for better visibility */
+  outline: none;
+  background-color: transparent; /* Set input background color to transparent */
+  color: #dee4eb; /* Set the text color */
+}
+/* SEARCH END */
+
 @media (max-width: 1536px) {
   .container {
     max-width: 1366px;

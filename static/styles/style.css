@@ -116,6 +116,16 @@ a {
 }
 /* LIST END */
 
+/* ICONS START */
+.github-icon g {
+  fill: var(--text);
+}
+
+.portfolio-icon g {
+  fill: var(--text);
+}
+/* ICONS END */
+
 @media (max-width: 1536px) {
   .container {
     max-width: 1366px;

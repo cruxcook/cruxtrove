@@ -9,6 +9,7 @@ categories = ["javascript", "html", "css"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/pokedex"
+deployment = "https://cruxcook.github.io/pokedex/"
 +++
 
 ![screenshot_1](images/homepage.webp)

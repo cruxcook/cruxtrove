@@ -9,6 +9,7 @@ categories = ["javascript", "html", "css"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/2048"
+deployment = "https://cruxcook.github.io/2048/"
 +++
 
 ![screenshot](images/screenshot.webp)

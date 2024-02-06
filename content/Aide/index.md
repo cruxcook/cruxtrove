@@ -9,6 +9,7 @@ categories = ["nextjs", "tailwindcss", "typescript", "shadcn-ui", "clerk-auth"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/aide"
+deployment = "https://aide-tau.vercel.app/"
 +++
 
 ![screenshot](images/aide_screenshot.webp)

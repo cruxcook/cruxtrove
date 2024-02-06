@@ -9,6 +9,7 @@ categories = ["cpp"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/retro-visualizer"
+deployment = ""
 +++
 
 ![image](images/retro_screenshot.webp)

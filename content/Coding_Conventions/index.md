@@ -9,6 +9,7 @@ categories = ["commit-message", "python"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/coding-conventions"
+deployment = ""
 +++
 
 - [Commit Message](https://github.com/cruxcook/coding-conventions/wiki/Commit-Message)

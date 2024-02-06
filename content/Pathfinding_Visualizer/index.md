@@ -9,6 +9,7 @@ categories = ["python", "pygame"]
 authors = ["Crux Cook"]
 avatar = "/images/avatar.webp"
 projSrc = "https://github.com/cruxcook/pathfinding-visualizer"
+deployment = ""
 +++
 
 ![screenshot_1](images/screenshot_1.webp)

@@ -2,7 +2,7 @@
 title = 'Aide'
 date = 2024-02-05T15:35:39-08:00
 draft = false
-description = ""
+description = "AI Platform - OpenAI"
 image = "/images/typescript_icon.webp"
 imageBig = "/images/typescript_icon.webp"
 categories = ["nextjs", "tailwindcss", "typescript", "shadcn-ui", "clerk-auth"]
@@ -12,7 +12,7 @@ projSrc = "https://github.com/cruxcook/aide"
 deployment = "https://aide-tau.vercel.app/"
 +++
 
-![screenshot](images/aide_screenshot.webp)
+![screenshot](images/landing-screenshot.webp)
 
 > Developed in [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), [Shadcn/UI](https://ui.shadcn.com/), [Clerk](https://clerk.com/).
 
@@ -30,6 +30,8 @@ deployment = "https://aide-tau.vercel.app/"
 
 ### 2. Features
 
+![screenshot](images/dashboard-screenshot.webp)
+
 - Tailwind design.
 - Tailwind animations and effects.
 - Full responsiveness.
@@ -37,6 +39,10 @@ deployment = "https://aide-tau.vercel.app/"
 - Client form validation and handling using [react-hook-form](https://react-hook-form.com/).
 - Page loading state.
 - Conversation Generation Tool (Open AI).
+- Code Generation Tool (Open AI)
+- Image Generation Tool (WIP)
+- Music Generation Tool (WIP)
+- Video Generation Tool (WIP)
 
 ### 3. Usage
 
@@ -46,7 +52,13 @@ deployment = "https://aide-tau.vercel.app/"
 git clone https://github.com/cruxcook/aide.git
 ```
 
-- Configure ".env" file
+- Set up environment
+
+```bash
+cp .emv.example .emv
+```
+
+- Configure environment
 
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=

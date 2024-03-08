@@ -1,6 +1,6 @@
 +++
 title = 'Retro Visualizer'
-date = 2023-12-14T16:44:33-08:00
+date = 2024-03-08T15:23:33-08:00
 draft = false
 description = "Sorting/Searching Visualizer"
 image = "/images/cpp_icon.webp"
